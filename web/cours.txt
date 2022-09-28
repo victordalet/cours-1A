@@ -1,0 +1,4 @@
+/*28-09*/
+	// fonctionnement d'internet
+	// html -> d'écrit la structure
+	// tp découverte balise (html5)

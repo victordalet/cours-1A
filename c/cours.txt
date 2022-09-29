@@ -20,22 +20,20 @@
 
 
 	/*exemple de programme d'addition*/
-	#include <stdio.h>
-
-	int add(int val1 , int val2) {
-	    return val1 + val2;
-	}
 
 
-	int main(int argc , char **argv) {
-	    int val1 , val2 , result ;
-	    printf("Type the first value :");
-	    scanf("%d",&val1);
-	    printf("Type the second value :");
-	    scanf("%d",&val2);
-	    result = add(val1,val2);
-	    printf(" Result : %d ",result);
-	    return 0;
-	}
 
-	
+
+/*29-09*/
+	// obfuscation -> technique informatique pour cacher les codes (ex : nom de variables ou fonction incropréhensible ; saut de ligne suprimer)
+
+	// variables noms -> snake case : prix_article / camel case : prisArticle
+	// signed -> + ou - ; unsigned -> +
+	// short : 2oct ; int : 4oct ; long 4-8oct ; longlong 8oct ; 
+	// % -> hd ; d ; ld ; lld ; hu ; u ; lu ; llu ; 
+	// float : 4oct ; double : 8oct ;
+	// preferer le double (%lf)
+	// char (1oct) -> sert à stoquer un petit entier ; un symbole (utiliser '' ) ;
+	// ascii : A->65 ; a-> 97 ; 0 -> 48  
+
+	/*exercice simulateur de crédits*/

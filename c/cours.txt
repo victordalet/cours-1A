@@ -37,3 +37,24 @@
 	// ascii : A->65 ; a-> 97 ; 0 -> 48  
 
 	/*exercice simulateur de crédits*/
+
+	/*ex 2 & 3 & 5*/
+
+	/*EX 2*/
+		1) >>> 4 44 84 124 164 204 0
+		2) >>> 10 1010 2010 3010 4010 5010 0
+		3) Permet d'afficher la table de numération de 1 à 5, suivit du reste de la division du dernier therme du nombre a 
+
+
+    int a = 0xa;
+    int b = 0x01;
+    int _0_ = 040;
+    a += b + _0_;
+    b += _0_;
+    _0_ = a - _0_;
+    a = a - _0_;
+    b = _0_ - b + a;
+    _0_ += - b;
+    printf("%d %d %d", a, b, _0_);
+
+/*30-09*/

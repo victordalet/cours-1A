@@ -56,7 +56,7 @@ int main() {
     scanf("%lf",&valueC);
     printf("Enter the value x : ");
     scanf("%d",&valueX);
-    printf("treatment in progress\n");
+    printf("treatment in progress...\n");
     /* DISPLAY RESULT */
     printf("result of the first calculation : %.2lf\n", firstCalculation(valueA,valueB));
     printf("result of the second calculation : %.2lf\n", secondCalculation(valueA,valueB,valueC));

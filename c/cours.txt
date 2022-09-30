@@ -34,7 +34,7 @@
 	// float : 4oct ; double : 8oct ;
 	// preferer le double (%lf)
 	// char (1oct) -> sert à stoquer un petit entier ; un symbole (utiliser '' ) ;
-	// ascii : A->65 ; a-> 97 ; 0 -> 48  
+	// ascii : A->65 ; a-> 97 ; ensemble vide -> 48  
 
 	/*exercice simulateur de crédits*/
 
@@ -46,15 +46,21 @@
 		3) Permet d'afficher la table de numération de 1 à 5, suivit du reste de la division du dernier therme du nombre a 
 
 
-    int a = 0xa;
-    int b = 0x01;
-    int _0_ = 040;
-    a += b + _0_;
-    b += _0_;
-    _0_ = a - _0_;
-    a = a - _0_;
-    b = _0_ - b + a;
-    _0_ += - b;
-    printf("%d %d %d", a, b, _0_);
 
 /*30-09*/
+	// Opérateurs :
+		// calculs -> + ; - ; / ; * ; % -> (detecter multiple ; isoler un chiffre ; aléatoire ...)
+		// comparaison -> || ; && ; ! ; < ; > ; == ; != ; >= ; <=
+		// affectation -> = ...
+		// divers -> sizeof ; cast  (ex : pox(x,n/p)) ; ? : (condition ternaire)
+
+	// isoler avec modulo : value%10 ; value/10%10 ; value/100
+
+	// random entre 1 & 6 :       
+		// srand((unsigned) time(NULL));
+    	// printf("%d\n", (rand()%6)+1);
+
+	/* EX JEU DE DEE */
+
+	/*Valeur absolue*/
+		(n < 0) ? -n: n;

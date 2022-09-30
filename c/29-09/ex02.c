@@ -12,15 +12,15 @@
 #include <stdlib.h>
 
 int main() {
-    int a = 0xa; // decimal to Hex : 10
-    int b = 0x01; // decimal to Hex : 1
-    int c = 010; // decimal to Hex : 8
+    int a = 10; // decimal to Hex : 10 0xa
+    int b = 1; // decimal to Hex : 1 0x01
+    int c = 8; // decimal to Hex : 8  010
     a += b + c; 
     b += c; 
     c = a - c; 
     a = a - c; 
     b = c - b + a; 
-    c += - b; 
+    c -=  b; 
     printf("%d %d %d", a, b, c);
     return EXIT_SUCCESS;
 }				

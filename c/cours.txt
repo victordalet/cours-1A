@@ -64,3 +64,6 @@
 
 	/*Valeur absolue*/
 		(n < 0) ? -n: n;
+
+/*02 10*/
+	/*Exercices*/

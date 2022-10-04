@@ -1,7 +1,7 @@
 /*
  * Programme 3 EX chapitre 1
- * Calcule note hackaton
- *
+ * 
+ *  Objectif : Calcule note hackaton
  *  Auteur : V. Dalet
  *  Date   : 02 10 2022
  * */

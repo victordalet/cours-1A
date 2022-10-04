@@ -1,40 +1,41 @@
 /*
- * Programme 6 EX chapitre 1
- * imprimante
- *
+ * Programme 5 EX chapitre 1
+ * tour de magie
+*
  *  Auteur : V. Dalet
  *  Date   : 02 10 2022
- * */
-
-
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
-int time(char letter1 , char  letter2){
+void magic(int nb){
     /*Initialization*/
-    char result =  letter2 - letter1; // diference deux lettre
-    char dif;
-    char middle = ('Z'-'A')/2; // millieux de l'alphabet
-    if (result < 0)
-        result = -result; // rend le nb positig
-    if (result > middle ){ // si supérieur au millieux partir de l'autre sens
-        dif = result - middle;
-        result-= dif*2;
-        result+= 2;
-    }
-    return  result;
+    int val1;
+    int val2;
+    /*Calcul*/
+    val1 = nb%10;
+    val2 = ((nb/100) * 10) + nb/10%10;
+    /*Display Result*/
+    printf("%d + %d = %d (Votre age)",val2 , val1 ,val1+val2 );
 }
 
 int main() {
     /*Initialization*/
-    char letter1 = 'O';
-    char letter2 = 'D';
+    int age;
+    int randomNumber;
+    int nb_final; //soustraction finale
     /*Input*/
-    /*printf("Entrer la lettre de depart : ");
-    scanf("%c",&letter1);
-    printf("Entrer la lettre de fin : ");
-    scanf("%d",&letter2);*/
+    printf("Donner votre age : ");
+    scanf("%d",&age);
+    age *= 10;
+    printf("Multiplier par dix : %d \n",age);
+    printf("Donner un nombre aleatoire\n");
+    scanf("%d",&randomNumber);
+    randomNumber *= 9;
+    printf("Multiplier par 9 : %d\n",randomNumber);
+    nb_final = age-randomNumber;
+    printf("Soustraction de ses deux nombre : %d\n",nb_final);
     /*Function*/
-    printf("Il faudra %d seconde", time(letter1,letter2));
+    magic(nb_final);
     return EXIT_SUCCESS;
 }

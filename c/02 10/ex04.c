@@ -1,7 +1,7 @@
 /*
  * Programme 4  EX chapitre 1
- * Traitement lettre
- *
+ * 
+ *  Objectif : Traitement lettre
  *  Auteur : V. Dalet
  *  Date   : 02 10 2022
  * */

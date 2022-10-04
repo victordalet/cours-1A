@@ -1,7 +1,7 @@
 /*
- * Programme 7 EX chapitre 1
- * giga seconde
- *
+ * Programme 6 EX chapitre 1
+ * 
+ *  Objectif : imprimante
  *  Auteur : V. Dalet
  *  Date   : 02 10 2022
  * */
@@ -9,19 +9,32 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
-
+int time(char letter1 , char  letter2){
+    /*Initialization*/
+    char result =  letter2 - letter1; // diference deux lettre
+    char dif;
+    char middle = ('Z'-'A')/2; // millieux de l'alphabet
+    if (result < 0)
+        result = -result; // rend le nb positig
+    if (result > middle ){ // si supérieur au millieux partir de l'autre sens
+        dif = result - middle;
+        result-= dif*2;
+        result+= 2;
+    }
+    return  result;
+}
 
 int main() {
     /*Initialization*/
-    char age;
+    char letter1 = 'O';
+    char letter2 = 'D';
     /*Input*/
-    printf("Quelle est votre age?");
-    scanf("%c",&age);
-    /*Result*/
-    long gigaSec = pow(10,9);
-    double years = gigaSec/60/60/24/365;
-    printf("Vous aurez %lf ans apres une vie d'une giga seconde",years+age);
+    /*printf("Entrer la lettre de depart : ");
+    scanf("%c",&letter1);
+    printf("Entrer la lettre de fin : ");
+    scanf("%d",&letter2);*/
+    /*Function*/
+    printf("Il faudra %d seconde", time(letter1,letter2));
     return EXIT_SUCCESS;
 }

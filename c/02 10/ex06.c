@@ -14,8 +14,14 @@
 
 
 int main() {
+    /*Initialization*/
+    char age;
+    /*Input*/
+    printf("Quelle est votre age?");
+    scanf("%c",&age);
+    /*Result*/
     long gigaSec = pow(10,9);
-    double day = gigaSec/60/60/24;
-    printf("%lf",day);
+    double years = gigaSec/60/60/24/365;
+    printf("Vous aurez %lf ans apres une vie d'une giga seconde",years+age);
     return EXIT_SUCCESS;
 }

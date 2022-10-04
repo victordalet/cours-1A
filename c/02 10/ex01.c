@@ -28,6 +28,11 @@ double length(int x1, int y1, int x2, int y2) {
     return sqrt((pow(x2-x1,2))+(pow(y2 -y1,2)));
 }
 
+int ray(int x ,int y ,int x2,int y2,int ray){
+    // Verifie si dans un rayon
+    return ((x >= x2+ray || x <= x2-ray ) && (y >= y2+ray || y<= y2-ray )) ? 1 : 0;
+}
+
 int main() {
     /*Initialization*/
     int x1;
@@ -50,5 +55,6 @@ int main() {
     switchValues(&y1,&y2);
     printf("Nouvelle valeur \n x1 : %d \n y1 : %d \n x2 : %d \n y2 : %d \n",x1,y1,x2,y2);
     printf("Distance des deux points : %.2lf", length(x1,y1,x2,y2));
+    printf("%d", ray(x1,y1,x2,y2,6));
     return EXIT_SUCCESS;
 }

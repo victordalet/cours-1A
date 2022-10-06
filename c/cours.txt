@@ -67,3 +67,15 @@
 
 /*02 10*/
 	/*Exercices du 04 10*/
+
+/*06 10*/
+	// double scnaf("%c") -> scanf(" %c") ; fflush(stdin) ; fpurge(stdin) [mac]
+
+	// Instructions de tests et de boucles
+	// tests  
+		// ? :    -> Une seule instruction ; else obligatoire 
+		// if     -> Générale
+		// switch -> Comparer une seule variable à plusieurs valeurs
+			// switch (var [entier !reel]) {case v: instructions;beak; default: ...}
+
+	/*Exemples Conditions if et switch*/

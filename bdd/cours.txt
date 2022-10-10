@@ -1,0 +1,75 @@
+/*10-10*/
+	// Exemple d'aplications de BDD -> Réservation ; Commandes ; réseau social...
+	// BDD un seul language -> SQL
+	// BDD -> Ensemble structuré et organisé permettant le stockage de grandes quantités d'informations afin d'en faciliter l'exploitation.
+	// SGBD -> Logiciel destiné a stocker et a partager les informations dans une BDD, en garantissant la qualité, la pérennité et la confidentialité 		des informations, tout en mmasquant la complexité des informations.
+	// position SGBD ->  Innterface utilisateur <-> SGBD <-> iterface d'éccès physique <-> BDD
+
+	// Architecture trois niveaux d'un SGBD
+		// Niveau externe (valeurs)
+			// Appelé schéma externe ou vue
+			// Permet de masquer la complexité de la base de données
+		// Niveau conceptuel (organisation/structure)
+			// Implémaentation du schéma réalisé
+			// Décrit la structure des données, les contraintes et les relations
+			// Dans les SGBD relationnels, il s'agit d'une vision tabulaire
+		// Niveau interne (stockage sur le système de fichier)
+
+	// Objectif SGBD
+		// Indépendance physique des données -> pas d'inpacte entre différents niveaux et méthodes d'éccès transparentes pour l'user
+		// Indépendance logique des données -> même ensemble de données peut être vu différemment pas des users différents
+		// Accès aux données -> via un DML optimisé poru minimiser les accès disque 
+		// Administration centralisée des données -> lieu commun
+		// Non-redondance des données -> chaque info représentée q'une seule fois (evite prbl MAJ)
+		// Cohérence des données -> contraintes d'intégrité -> définies dans le LDD et vérifié par le CRUD 
+			// CRUD -> CREATE ; READ ; UPDATE ; DELETE
+		// Partage des données -> pls user accès aux même données au même moment
+		// Sécurité des données -> sécurité des accès ; associer a chauqe user des droites d'accès aux données
+		// résistance aux passes (2 solutions) ->
+			// Récupérer les données dans l'état avant modif
+			// Terminer la modification
+
+	// SQL ->
+		// Language manipulation des données -> externe
+		// Language définition des données   -> conceptuel
+		// Language de contrôle des données  -> interne
+
+	// SGBD (relationnel)
+		// GRATUIT
+			// MINI (< 200 mo)
+				// SQLite (système embarqué)
+			// PETITES (< 10Go)
+				// MySQL
+				// MariaDBg
+				// SQLite
+			// GRANDES 
+				// PostGreSQL
+		// PAYANT
+			// PETITES (< 10Go)
+				// Access (disponible sur Office ; sans compétence dev)
+			// GRANDES
+				// SQL Server
+				// Oracle Database
+
+	// Concepts des bases de données et langage SQL
+
+	// L'entité -> Population d'individus Homogènes	
+		// Exemple -> Un voilier, un étudiant, une salle , un fournisseur ...
+		// Représentation ->  NOM en Majuscule encadré dans un rectangle
+							   __________________
+							  |      BATEAU      |
+							  |__________________|
+  	// Attribut ou Propriété -> caractéristique associé à une entité ou une association
+  		// Un attribut est une donnée élémentaire
+  		// Une entité et ses attributs doivent être cohérents
+  		// Un attribut ne peut pas être partagé entre plusieurs entités ou associations
+	  	// <!> Un attribut ne peut contenir qu'une seule valeur.
+  		// Représentation -> 
+							   __________________
+							  |      BATEAU      |
+							  |__________________|
+							  |      taille      |
+							  |      poids       |
+							  |      capacite    |
+							  |      couleur     |
+							  |__________________|

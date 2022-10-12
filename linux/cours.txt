@@ -1,0 +1,30 @@
+/*12 10*/
+	// Système exploitation -> programme qui permet de donnée vie aux composants éléctroniques
+	// Rôles ->
+		// fournir à l'user une interface simplifiéé qui lui permet d'accéder au matériel
+		// gérer les ressources critiques de la machine et les répartir entre les différentes taches
+	// Caractéristiques ->
+		// multi plateformes
+		// multi utilisateur
+		// gratuit
+		// libre
+		// open source
+		// supporte la norme POSIX
+	// Distributions ->
+		// Debain -> stabilité ; gérer par des bénévoles
+		// RED Hat/Fedora -> projet commercial
+		// Ubuntu -> orienté grand public (+ interface graphique)
+
+	// su -           -> permet de passer en superuser
+	// tab completion -> permet au shell de compléter une commande en pressant TAB	
+
+	// Arborescence du sysème de fichiers (sensible à la casse)
+		// bin       |          
+		// home      | 
+		// root      | 
+		// dev       | -> premiers répèrtoire
+		// etc       |
+		// sbin      |
+		// usr       |
+	// commande arborescence
+		// ls | ls -a -> fichier caché | ls -l -> plus d'info  | ls -d -> info sur le répartoire pas dans

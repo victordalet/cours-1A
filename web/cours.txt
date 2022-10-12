@@ -2,3 +2,5 @@
 	// fonctionnement d'internet
 	// html -> d'écrit la structure
 	// tp découverte balise (html5)
+/*12-10*/
+	// css

@@ -5,6 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>TP1</title>
 </head>
 
@@ -14,21 +15,23 @@
 <body>
 
 	<header>
-		<img src="assets/logo.svg" alt="logo html5" height="60px">
+		<img src="assets/logo.svg" alt="logo html5" >
 		<nav>
 			<ul>
-				<li><a target="_blank" title="aller sur google" href="https://www.google.com/">GOOGLE</a></li>
-				<li><a target="_blank" title="aller sur W3S" href="https://www.w3schools.com/">W3SCHOOLS</a></li>
-				<li><a target="_blank" title="send mail" href="mailto:email@test.com">MAIL</a></li>
-				<li><a href="#title1">Title1</a></li>
-				<li><a href="#title2">Title2</a></li>
+				<li><div class="button"><a target="_blank" title="aller sur google" href="https://www.google.com/">GOOGLE</a></div></li>
+				<li><div class="button"><a target="_blank" title="aller sur W3S" href="https://www.w3schools.com/">W3SCHOOLS</a></div></li>
+				<li><div class="button"><a target="_blank" title="send mail" href="mailto:email@test.com">MAIL</a></div></li>
+				<li><div class="button"><a href="#title1">Title1</a></div></li>
+				<li><div class="button"><a href="#title2">Title2</a></div></li>
 			</ul>
 		</nav>
 	</header>
-
+	<div class="round"></div>
 	<main>
-		<h1>TITRE DE LA PAGE</h1>
-		<section>
+
+		<h1 class="main-title"><span>TITRE</span> </h1>
+		<h1 class="main-title"><span>DE LA PAGE</span> </h1>
+		<section class="section1">
 			<h1 id="title1">SECTION1</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -38,8 +41,8 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 			<h2>La fondation Mozilla</h2>
-			<img src="assets/fondation_mozilla.png" alt="Le logo Mozilla" width="100px">
-			<figcaption><a href="https://www.mozilla.org" target="_blanc">Le logo Mozilla</a></figcaption>	
+			<img src="assets/fondation_mozilla.png" alt="Le logo Mozilla" >
+			<figcaption><a href="assets/fondation_mozilla.png" target="_blanc">Ouvrir le logo dans une nouvelle fenêtre.</a></figcaption>	
 			<h3>Table des utilisateurs</h3>
 			<table>
 				<thead>
@@ -49,7 +52,6 @@
 					<th>EMAIL</th>
 				</tr>
 			</thead>
-
 			<tbody>
 				<tr>
 					<td>Contenu</td>
@@ -89,7 +91,7 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</strong></p>
 
 		</section>
-		<section>
+		<section class="section2">
 			<h1 id="title2">SECTION 2</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

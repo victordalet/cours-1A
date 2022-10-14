@@ -1,0 +1,79 @@
+Contacte -> 06 07 26 97 70
+/*14 10*/
+	// Entreprise -> est une organisation économique qui a pour vocation de produire des biens et des services, déstiné à la consomation. 
+		Elle a pour objectifs la maximalisation du profit. 
+		Le monde des entreprises est très vastes ; aux deux étrémité nous avons l'entreprise artisanale et la multinational implenté dans plusieurs pays. 
+		Quelque sois leur tailles, leurs secteur d'activitées, leurs statues juridiques, leurs méthodes de productions, ont peut dégager les même constantes dans la réalité de leur fonctionnement. 
+		L'entreprise s'entoure de différent partenaires. Organisée, elle doit assurer la coordination éfficasse des éléments qui la compose.
+		Elle a aussi des résponsabilitées particulières vis à vis de l'environnement social dans lequel elle évolue. 
+		On peut tout d'abord classer les entreprises par leur tailles, notamment en fonction de leurs effectifs.
+		On peut aussi classer les entreprises selon leurs statut juridiques ; certaines sont individuel et d'autres sont des société tel que SARL;SAS;SA ...
+		
+
+		// organisation économique -> but lucratif
+		// bien / service -> matériel / immatériel
+		// maximalisation du profit -> faire de l'argent
+		// artisant -> transformer une matière première de ses mains		
+		// tailles -> effectifs
+		// secteurs d'activitées ->
+			// Primaire
+			// Secondaire
+			// Tercière
+		// méthode de production -> la facon dont on va produire
+		// partenaires ->
+			// interne -> salarié (sert à la valorisation d'une entreprise)
+			// externe -> le reste (clients ; fournisseur ; banque ;...) [l'entreprise ne peut pas fonctionner sans]
+		// entrepise qui ouvre et obligé de faire venir la médecine du travail -> 
+			// ex : (bureau blanc interdit ; ventilateur fix interdit ; manque de fenêtre interdit ; extincteur obligatoire ;... )
+
+		// classment entreprises
+			// effectifs
+
+							Micro entreprise                 -> (0 à 9 salariées)
+							Petite entreprise                -> (10 à 49 salariées)
+							Moyenne entreprise               -> (50 à 249 salariées)
+							Entreprise Taille Iintermédiare  -> (250 à 4999 salariées)
+							Grandes entreprises              -> (+ de 5000 salariées)
+
+
+				// PME -> petite moyenne entreprise
+				// PMI ->  >10 salaries et chiffre d'affaires <50 m d'€
+				// ETI -> Entreprise de taille intermédiare -> 250 à 4999 salariées et chiffre d'affaire n'éccédent pas 1,5milliard d'€
+
+
+			//statut juridique
+				// individuel -> capital impartient à unse seul persoonnes
+				// AUTRE 
+					// Dirigeant -> SARL  
+					// SAS -> Président 
+					// SA (société anonyme) -> PDG ou PCA (conseille administration)
+
+
+		// types de gérant pour un SARL (Société à responsabilité limitée) 
+			// majoritaire 
+			// égalitaire 
+			// minoritaire 
+			// non associé -> possède aucune part social (du captial social)
+
+			// TNS (travailleur non salarié) -> part >= 51%
+
+	
+		// auto entrepreneur pas considérer comme entreprise -> car non participation cotisation des salariées
+
+		// Chiffre d'affaire (hors taxe) -> tout ce qui rentre
+
+
+
+
+
+/*22 11*/
+	/*2 questions (contrôle)*/
+	// ENTREPRISE PUBLILC
+	// ENTREPRISE COTE BOURSE
+
+/*23 11*/
+	/*contrôle continue (créer une société [nom-logo-...])*/
+
+
+/*04-01*/
+	/*L'importance de l'informatique au seins de l'entreprise (soutenace - interview d'une entreprise)*/

@@ -16,6 +16,22 @@
 
 	<header>
 		<img src="assets/logo.svg" alt="logo html5" >
+
+		<button class="btn">
+		    <div class="spin-container">
+		    <div class="front">
+		        <div class="bar b1"></div>
+		        <div class="bar b2"></div>
+		        <div class="bar b3"></div>
+		    </div>
+		    <div class="back">
+		        <div class="bar b1 b-back"></div>
+		        <div class="bar b3 b-back"></div>
+		    </div>
+		    </div>
+		</button>
+
+
 		<nav>
 			<ul>
 				<li><div class="button"><a target="_blank" title="aller sur google" href="https://www.google.com/">GOOGLE</a></div></li>
@@ -28,9 +44,10 @@
 	</header>
 	<div class="round"></div>
 	<main>
-
-		<h1 class="main-title"><span>TITRE</span> </h1>
-		<h1 class="main-title"><span>DE LA PAGE</span> </h1>
+		<div class="fixed-title">
+			<h1 class="main-title"><span>TITRE</span> </h1>
+			<h1 class="main-title"><span>DE LA PAGE</span> </h1>
+		</div>
 		<section class="section1">
 			<h1 id="title1">SECTION1</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -42,9 +59,9 @@
 
 			<h2>La fondation Mozilla</h2>
 			<img src="assets/fondation_mozilla.png" alt="Le logo Mozilla" >
-			<figcaption><a href="assets/fondation_mozilla.png" target="_blanc">Ouvrir le logo dans une nouvelle fenêtre.</a></figcaption>	
-			<h3>Table des utilisateurs</h3>
-			<table>
+			<figcaption ><a href="assets/fondation_mozilla.png" target="_blanc">Ouvrir le logo dans une nouvelle fenêtre.</a></figcaption>	
+			<h3 class="slide2">Table des utilisateurs</h3>
+			<table >
 				<thead>
 				<tr>
 					<th>NOM</th>
@@ -63,27 +80,28 @@
 					<td>Contenu</td>
 					<td>Contenu</td>
 				</tr>
+			</tbody>
 			</table>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<p class="slide3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<p class="slide4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<p class="slide5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<p class="slide6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -92,7 +110,7 @@
 
 		</section>
 		<section class="section2">
-			<h1 id="title2">SECTION 2</h1>
+			<h1 class="slide1" id="title2">SECTION 2</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -126,7 +144,7 @@
 		</section>
 	</main>
 
-	<footer></footer>
-
+	<footer><p>&copy; Copyright  2022| Tous droits réservés</p></footer>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

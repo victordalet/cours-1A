@@ -16,15 +16,133 @@
 		// Ubuntu -> orienté grand public (+ interface graphique)
 
 	// su -           -> permet de passer en superuser
+	// ctrl + d       -> enleve le superuser
 	// tab completion -> permet au shell de compléter une commande en pressant TAB	
 
 	// Arborescence du sysème de fichiers (sensible à la casse)
 		// bin       |          
 		// home      | 
 		// root      | 
-		// dev       | -> premiers répèrtoire
+		// dev       | -> premiers répèrtoires
 		// etc       |
 		// sbin      |
 		// usr       |
 	// commande arborescence
 		// ls | ls -a -> fichier caché | ls -l -> plus d'info  | ls -d -> info sur le répartoire pas dans
+
+
+
+/*17 10*/
+	// Commandes
+		// mv        -> renommer ou deplacer
+		// cp        -> copier fichier
+		// cp -r     -> copier répertoire
+		// touch     -> creer fichier
+		// pwd       -> affiche le chemin du dossier actuel
+		// cd (seul) -> revient à la racine
+		// rmdir     -> supprime un répertoire vide
+		// rm        -> supprime un fichier
+		// rm -r     -> supprime un répertoire et ses fichiers
+		// --help    -> affiche la doc d'une commande
+		// man       -> affiche la doc d'une commande
+	
+	// TP 1
+		// EX 1
+			>>> mkdir -p Cours/linux
+			>>> mkdir Cours/archi
+			>>> mkdir Cours/linux/Chap1
+			>>> mkdir Cours/linux/Chap2
+			>>> mkdir Cours/archi/Boole
+			>>> mkdir -p TP/linux/exshell TP/archi/conversions TP/archi/circuits
+
+			>>> su -l
+			>>> wget http://nn7.free.fr/tree.sh                   # install le pgrm
+			>>> chmod +x tree.sh                                  # donne les droits pour lancer le pgrm
+			>>> ./tree.sh                                         # lance le pgrm
+			>>> tree                                              #voir l'arborescance
+
+		// EX 2
+			>>> touch Cours/linux/Chap2/Shell
+			>>> cd Cours/linux/Chap2
+			>>> touch arborescence commandes
+			>>> cd
+			>>> mkdir archives
+			>>> cp -r Cours/linx archives
+			>>> mv archives/ archives_linux
+			>>> rm -r archives_linux/linux/Chap2
+			>>> cd  TP/archi
+			>>> touch dec2bin hex2bin
+			>>> cd 
+			>>> mkdir archives_archi
+			>>> cp -r TP/archi/ archives_archi
+			>>> mkdir ARCHIVES
+			>>> mv archives_archi/ archives_linux/ ARCHIVES
+
+	// TP 1 BONUS
+		// EX 1
+			/home/Antoine
+
+		// EX 2
+			>>> mkdir -p Cours/Linux_2i Cours/Systeme Projets
+
+		// EX 3
+			>>> cp /public/2i/Linux_2/* Cours/Linux_2
+			>>> cp /public/2i/Systeme/* Cours/Systeme
+
+		// EX 4
+			>>> touch /public/2i/linux/Antoine_linux_17102022
+			>>> touch /public/2i/Systeme/Antoine_Systeme_17102022
+
+		// EX 5
+			>>> cd
+			----
+			>>> cd ../../../home/Antoine
+			----
+			>>> cd /home/Antoine
+			----
+			>>> cd ~
+
+		// EX 6
+			>>> mv Cours/linux/Chap1 Cours/linux/Chap1_Disques
+			>>> mv Cours/linux/Chap2 Cours/linux/Chap2_shell 
+
+		// EX 7
+			>>> rm Cours/Systeme/Processus
+			>>> cd
+			>>> cp public/2i/Systeme/ProcessusV2 home/Antoine/Cours/Systeme
+
+
+
+	// Métacaractères -> donne un filtre aux fichier 
+		// a*         -> premier caratere doit être un a 
+		// *a         -> dernier caractere doit être un a
+		// a*a        -> dernier et premier caractere doit être un a
+		// ?          -> fichier contenant un seul caractere  
+		// a??        -> commence par a puis contient deux autres caracteres
+		// a[bc]*     -> commence par a et deuxieme soit b soit c
+		// [a-d]*     -> commence par une lettre comprise entre a et d
+		// [a-z A-Z]* -> commence par une lettre
+		// [!a-d]*    -> ne commence pas par une lettre comprise entre a et d 
+
+	// TP 2
+		// EX 1
+			>>> p[aeiou]*
+		// EX 2
+			>>> ???????
+		// EX 3
+			>>> ???????*
+		// EX 4
+			>>> [aeiou]*????
+		// EX 5
+			>>> [1-9]
+		// EX 6
+			>>> [!aeiou]*[aeiou]
+		// EX 7
+			>>> ?z*[1-9]
+		// EX 8
+			>>> ss
+		// EX 9
+			>>> ?[a-f][r-u]*
+		// EX 10
+			>>> [agtz]*[1-9 a-h]
+

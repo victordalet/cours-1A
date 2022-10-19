@@ -46,7 +46,8 @@ h1, h3 , h2 , figcaption {
 
 header {
 	width: 100%;
-	height: 20vh;
+	height: 70vh;
+
 }
 
 header img {
@@ -54,6 +55,7 @@ header img {
 	margin-top: 3vh;
 	height: 60px;
 }
+
 
 header nav ul li {
 	float: left;
@@ -77,28 +79,28 @@ header nav ul li .button {
 
 
 li:nth-child(1){
-	animation-delay: 0s;
 	animation: slide 2.5s infinite;
+	animation-delay: 0s;
 }
 
 li:nth-child(2){
-	animation-delay: 0.5s;
 	animation: slide 2.5s infinite;
+	animation-delay: 0.5s;
 }
 
 li:nth-child(3){
-	animation-delay: 1s;
 	animation: slide 2.5s infinite;
+	animation-delay: 1s;
 }
 
 li:nth-child(4){
-	animation-delay: 1.5s;
 	animation: slide 2.5s infinite;
+	animation-delay: 1.5s;
 }
 
 li:nth-child(5){
-	animation-delay: 2s;
 	animation: slide 2.5s infinite;
+	animation-delay: 2s;
 }
 
 
@@ -113,7 +115,7 @@ header nav ul li .button:hover {
 		transform: translateY(0px);
 	}
 	50% {
-		transform: translateY(10px) scale(1.1);
+		transform: translateY(40px);
 	}
 	100% {
 		transform: translateY(0px);
@@ -135,7 +137,6 @@ footer {
 	background: #f2F2F2;
 	text-align: center;
 	position: relative;
-	margin-top: 60vh;
 }
 
 /***************************************/
@@ -236,6 +237,12 @@ footer {
 
 .fixed-title {
 	background-attachment: fixed;
+	position: fixed;
+	z-index: -1;
+	width: 100vh;
+	left: 25%;
+	top: 25%;
+	min-height: 40vh;
 
 }
 
@@ -324,6 +331,7 @@ section {
 	background: #fff;
 	z-index: 3;
 	min-height: 50vh;
+	padding: 20px;
 }
 
 
@@ -341,6 +349,11 @@ section {
 .section1 p:hover {
 	box-shadow: none;
 	transform: translateY(10px);
+}
+
+.section2 {
+	top: -5vh;
+	position: relative;
 }
 
 .section2 p {
@@ -517,22 +530,35 @@ section {
 	.round {
   	width: 60vh;
   	height: 60vh;
-}
+	}
 
 
-@keyframes launch-cercle {
-  0% {
-    top: -60vh;
-    left: -60vh;
-  }
-  35% {
-    top: -60vh;
-    left: -60vh;
-  }
-  100% {
-    top: -20vh;
-    left: -20vh;
-  }
-}
+	@keyframes launch-cercle {
+	  0% {
+	    top: -60vh;
+	    left: -60vh;
+	  }
+	  35% {
+	    top: -60vh;
+	    left: -60vh;
+	  }
+	  100% {
+	    top: -20vh;
+	    left: -20vh;
+	  }
+	}
+
+	li:nth-child(even),li:nth-child(odd) {
+		animation: none;
+	}
+
+	.fixed-title {
+		left: -40%;
+	}
+
+	header {
+		height: 40vh;
+	}
+
 
 }

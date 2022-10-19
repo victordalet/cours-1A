@@ -71,7 +71,7 @@
 /*06 10*/
 	// double scnaf("%c") -> scanf(" %c") ; fflush(stdin) ; fpurge(stdin) [mac]
 
-	// Instructions de tests et de boucles
+	// Instructions de tests 
 	// tests  
 		// ? :    -> Une seule instruction ; else obligatoire 
 		// if     -> Générale
@@ -79,3 +79,11 @@
 			// switch (var [entier !reel]) {case v: instructions;beak; default: ...}
 
 	/*Exemples Conditions if et switch*/
+
+
+/*19 10*/
+	// Instructions de boucles
+
+	// for 
+	// while
+	// do while

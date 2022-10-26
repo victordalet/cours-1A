@@ -126,23 +126,56 @@
 
 	// TP 2
 		// EX 1
-			>>> p[aeiou]*
+			>>> p[aeiouy]*
 		// EX 2
 			>>> ???????
 		// EX 3
 			>>> ???????*
 		// EX 4
-			>>> [aeiou]*????
+			>>> [aeiouy]*????
 		// EX 5
 			>>> [1-9]
 		// EX 6
-			>>> [!aeiou]*[aeiou]
+			>>> [!aeiouy]*[aeiouy]
 		// EX 7
 			>>> ?z*[1-9]
 		// EX 8
-			>>> ss
+			>>> *ss*
 		// EX 9
 			>>> ?[a-f][r-u]*
 		// EX 10
-			>>> [agtz]*[1-9 a-h]
+			>>> [agtz]*[0-9a-h]
+
+/*26 10*/
+	// affichage des droits
+	// - rwx r-x r-x  |
+		 ___ ___ ___  | -> selon les différents membres 
+		  u   g   o   |
+
+  	// Exemples 
+  		// chmod o+x fic1   -> modifie aux autres ; + ajout ; droit en x
+  		// chmod ug-r fich1 -> enlève un droit a deux catégorie
+  		// chmod o-r,u+rx   -> plusieurs modifications séparé par une virgule
+
+  	// catégorie d'utilisateurs ->
+  		-> u(propriétaire) 
+  		-> g(membre)
+  		-> o(autre)
+  		-> a(tous)
+
+	//umask -> 0022 (par défault) -> calcule droit par défault
+		// droit par défault fichier = 666 - masque
+									 = 666 - 022
+									 = 644
+									 = rw-r--r-- 
+
+		// droit par défault répertoires = 777 - masque
+										 = 755
+										 = rwxr-xr-x
+
+
+	// TP 3
+		1) drwxrwxr--
+		2) -rw--w-rw-
+		3)  
 

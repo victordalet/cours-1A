@@ -59,6 +59,7 @@
 							   __________________
 							  |      BATEAU      |
 							  |__________________|
+
   	// Attribut ou Propriété -> caractéristique associé à une entité ou une association
   		// Un attribut est une donnée élémentaire
   		// Une entité et ses attributs doivent être cohérents
@@ -73,3 +74,91 @@
 							  |      capacite    |
 							  |      couleur     |
 							  |__________________|
+
+/*24 10*/
+
+	// Identifiant -> valeur unique pour chaque identité	
+		// Chaque entité possède exactement un identifiguit, pouvant être formé de plusieurs attributs
+		// Représentation -> (souligné)
+
+							   __________________
+							  |      BATEAU      |
+							  |__________________|
+							  | immatriculation  |
+							  | _______________  |
+							  |      taille      |
+							  |      poids       |
+							  |      capacite    |
+							  |      couleur     |
+							  |__________________|
+
+  	// Association -> liaison qui a une signification précise entre plusieurs entités
+  		// définis par des attributs
+  		// possèdent un identifiant (facultatif dans certains cas)
+  		// un attribut est placé dans une association uniquement lorsqu'il dépend de toutes les entités liées par l'association
+
+
+									 __________________                
+									|      PRODUIT     |      
+									|__________________|
+									|     	 id        |
+									|        __        |   
+									|       nom        |  
+									|       prix       |
+									|    description   |
+									|      marque      |
+									|__________________|
+                                        _____|______
+                                       (            )   
+                                       (  contient  )
+                                       (   ------   )
+                                       (  quantité  )
+                                       (____________)
+                                             |
+									 __________________
+									|     COMMANDE     |      
+									|__________________|
+									|        id        |
+									|        __        |   
+									| moyen de payment |  
+									|     adresse      |
+									|  date livraison  |
+									|  mode livraison  |
+									|__________________|
+
+	// Cardinalité ->
+		// utilisées pour qualifier qunatitativement les associations
+		// permet de préciser le nb minimal et maximal d'interventionn d'une identité sur une association
+		// Exemples ->
+		   -> 0,1
+		   -> 0,inf
+		   -> 1,1
+		   -> 1,inf 	
+		// Représentation -> (Modèle Conceptuel de Données (MCD))
+
+									 __________________                
+									|      BATEAU      |      
+									|__________________|
+									|  imatriculation  |
+									|  ______________  |   
+									|      taille      |  
+									|      poids       |
+									|     capacité     |
+									|__________________|
+									         | 1,n
+                                        _____|______
+                                       (            )   
+                                       (  navigue   )
+                                       (   ------   )
+                                       (   poste    )
+                                       (____________)
+                                             | 0,1
+									 ________|_________
+									|      MARIN       |      
+									|__________________|
+									|       nom        |
+									|       ___        |   
+									|      prénom      |  
+									|      ______      |
+									|     téléphone    |
+									|__________________|

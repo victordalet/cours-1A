@@ -1,6 +1,7 @@
 const spinContainer = document.querySelector(".spin-container");
 const button = document.querySelector("nav");
 const btn = document.querySelector("button");
+const title = document.querySelector(".fixed-title");
 
 
 
@@ -8,6 +9,7 @@ btn.addEventListener("click", () => {
     spinContainer.classList.toggle("active");
     if (screen.width < 1000) {
         button.classList.toggle("active");
+        title.classList.toggle("active");
     }
 });
 
@@ -40,3 +42,41 @@ window.addEventListener('scroll',()=>{
   }
 
 })
+
+
+/**************************************/
+
+const btn_light = document.querySelector(".light-mod");
+const root = document.querySelector(':root');
+let mod = true;
+
+
+btn_light.addEventListener("click",()=> {
+  if (mod == true) {
+    root.style.setProperty('--colorLight', '#000');
+    root.style.setProperty('--colorDark','#fff');
+    root.style.setProperty('--color3','#DE9400');
+    mod = false;
+  }
+  else {
+    root.style.setProperty('--colorLight', '#fff');
+    root.style.setProperty('--colorDark','#000');
+    root.style.setProperty('--color3','#F9F99A');
+    mod = true;
+  }
+});
+
+
+/**************************************/
+const folow = document.querySelector(".follow-cursor");
+
+document.onmousemove = function() {  
+
+  let x = event.clientX * 100 / window.innerWidth + "%";
+  let y = event.clientY * 100 / window.innerHeight + "%";
+
+  folow.style.left = x;
+  folow.style.top = y;
+  folow.style.transform = "translate(-" + x + ",-" + y + ")";
+
+}

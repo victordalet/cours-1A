@@ -1,0 +1,85 @@
+#ex1 {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+/*******************************/
+
+#ex2 {
+	flex-direction: row-reverse;
+}
+
+#ex2 div {
+	flex: 2;
+}
+
+#ex2 div:nth-child(2){
+	flex: 1;
+}
+
+
+/*******************************/
+
+#ex3 {
+	flex-wrap: wrap;
+}
+
+#ex3 div {
+	width: 25%;
+}
+
+/*******************************/
+
+#ex4 {
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: start;
+}
+
+#ex4 div:nth-child(4){
+	order: -1;
+}
+
+/*******************************/
+#ex5 {
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#ex5 div {
+	width: calc(50% / 3);
+}
+
+#ex5 div:nth-child(3n+2){
+	align-self: center;
+}
+
+#ex5 div:nth-child(3n){
+	align-self: flex-end;
+}
+
+
+/*******************************/
+
+#ex6 {
+	flex-wrap: wrap;
+}
+
+#ex6 div:nth-child(1){
+	width: 50%;
+}
+
+#ex6 div:nth-child(2),#ex6 div:nth-child(3){
+	width: 25%;
+}
+
+#ex6 div:nth-child(4),#ex6 div:nth-child(5),#ex6 div:nth-child(6) {
+	width: calc(50% / 3);
+}
+

@@ -6,19 +6,30 @@
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
-body {
-	height : 100vh;
-	font-family: Arial,Helvetica,sans-serif;
+:root {
 	--color1 : #C3EEEB;
 	--color2 : #F7C8C7;
 	--color3 : #F9F99A;
 	--division : 4;
+	--colorLight : #fff;
+	--colorDark : #000;
 }
+
+
+body {
+	height : 100vh;
+	font-family: Arial,Helvetica,sans-serif;
+	background: var(--colorLight);
+	transition: 2s;
+}
+
 
 h1, h3 , h2 , figcaption {
 	text-align: center;
+	color: var(--colorDark);
 }
 
 
@@ -64,17 +75,19 @@ header nav ul li {
 	padding-left: calc(100% / 11);
 	margin: auto;
 	transition: 1s;
+	cursor: pointer;
 }
+
 
 header nav ul li .button {
 	padding: 5px;
-	background: #fff;
-	border: 3px solid #000;
+	background: var(--colorLight);
+	border: 3px solid var(--colorDark);
 	border-radius: 50px;
 	transition: 1s;
 	min-width: 8vw;
 	text-align: center;
-	color: #000;
+	color: var(--colorDark);
 }
 
 
@@ -106,8 +119,8 @@ li:nth-child(5){
 
 
 header nav ul li .button:hover {
-	background: #000;
-	color: #fff;
+	background: var(--colorDark);
+	color: var(--colorLight);;
 }
 
 @keyframes slide{
@@ -125,12 +138,12 @@ header nav ul li .button:hover {
 header nav ul li a{
 	text-align: center;
 	text-decoration: none;
-	color: #000;
+	color: var(--colorDark);
 	transition: 1s;
 }
 
-header nav ul li a:hover {
-	color: #fff;
+header nav ul li:hover a {
+	color: var(--colorLight);;
 }
 
 footer {
@@ -138,6 +151,32 @@ footer {
 	text-align: center;
 	position: relative;
 }
+
+/***************************************/
+
+.light-mod {
+	width: 50px;
+	height: 50px;
+	background: var(--colorDark);
+	color: var(--colorLight);
+	border-radius: 50%;
+	position: relative;
+	top: 10px;
+	left: 95vw;
+	transition: 0.5s;
+	position: fixed;
+	z-index: 9999999;
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.light-mod i {
+	position: relative;
+	top: 8px;
+}
+
+
 
 /***************************************/
 .round {
@@ -150,6 +189,7 @@ footer {
   animation-fill-mode: forwards;
   z-index: -1;
   position: fixed;
+  transition: 2s;
 }
 
 
@@ -182,13 +222,15 @@ footer {
 	position: relative;
 	overflow: hidden;
 	font-size: clamp(20px,8vw,120px);
+	color: var(--colorDark);
+	transition: 2s;
 }
 
 .main-title span::after{
 	content: '';
 	display: block;
 	position: absolute;
-	width: 100%;
+	width: 120%;
 	height: 100%;
 	top: 0;
 	left: 0;
@@ -243,7 +285,6 @@ footer {
 	left: 25%;
 	top: 25%;
 	min-height: 40vh;
-
 }
 
 
@@ -299,7 +340,7 @@ table:hover {
 
 thead tr {
 	background: midnightblue;
-	color : #fff;
+	color : var(--colorLight);;
 	text-align: left;
 
 }
@@ -314,11 +355,12 @@ tbody tr, td , th {
 } 
 
 tbody tr{
-	background: #fff;
+	background: var(--colorLight);;
+	color: var(--colorDark);
 }
 
 tbody tr:nth-child(even){
-	background-color: #f3f3f3;
+	background-color: var(--colorLight);
 
 }
 
@@ -328,19 +370,22 @@ tbody tr:last-of-type {
 /**********************************************/
 
 section {
-	background: #fff;
+	background: var(--colorLight);;
 	z-index: 3;
 	min-height: 50vh;
 	padding: 20px;
+	transition: 2s;
 }
 
-
+p {
+	color: var(--colorDark);
+}
 
 .section1 p {
 	width: 40%;
 	padding: 30px;
 	margin: 50px auto;
-	box-shadow: 9px 9px 16px #ccc,-9px -9px 16px #ffffff;
+	box-shadow: 9px 9px 16px #ccc,-9px -9px 16px var(--colorLight);
 	transition: 0.6s;
 	cursor: pointer;
 	border-radius: 10px;
@@ -367,12 +412,12 @@ section {
 	box-shadow: none;
 	cursor: pointer;
 	z-index: -1;
-	background: #fff;
+	background: var(--colorLight);;
 
 }
 
 .section2 P:hover {
-	 box-shadow: 9px 9px 16px #808080,-9px -9px 16px #ffffff;
+	 box-shadow: 9px 9px 16px #808080,-9px -9px 16px var(--colorLight);
 	 transform: translateY(-10px) scale(1.2) ;
 	 z-index: -3;
 }
@@ -391,7 +436,7 @@ section {
   }
   
 .spin-container {
- 		cursor: pointer;
+ 	cursor: pointer;
     width: calc(300px/var(--division));
     height: calc(300px/var(--division));
     border-radius: 50%;
@@ -454,6 +499,21 @@ section {
     transform: translate(-50%, 0px) translateZ(calc(50px/var(--division))) rotate(-45deg);
 }
 
+
+
+/*******************************/
+
+.follow-cursor {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #f00;
+	opacity: 0.3;
+	border: 2px solid var(--colorDark);
+	position: fixed;
+	transition: 0.1s;
+	z-index: 0;
+}
 
 
 /*******************************/
@@ -556,8 +616,20 @@ section {
 		left: -40%;
 	}
 
+	.fixed-title.active {
+		display: none;
+	}
+
 	header {
 		height: 40vh;
+	}
+
+	.light-mod  {
+		left: 85vw;
+	}
+
+	.follow-cursor {
+		display: none;
 	}
 
 

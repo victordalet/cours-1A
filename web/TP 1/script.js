@@ -56,12 +56,14 @@ btn_light.addEventListener("click",()=> {
     root.style.setProperty('--colorLight', '#000');
     root.style.setProperty('--colorDark','#fff');
     root.style.setProperty('--color3','#DE9400');
+    scene.background = new THREE.Color(0x000000);
     mod = false;
   }
   else {
     root.style.setProperty('--colorLight', '#fff');
     root.style.setProperty('--colorDark','#000');
     root.style.setProperty('--color3','#F9F99A');
+    scene.background = new THREE.Color(0xffffff);
     mod = true;
   }
 });
@@ -80,3 +82,53 @@ document.onmousemove = function() {
   folow.style.transform = "translate(-" + x + ",-" + y + ")";
 
 }
+
+/**************************************/
+/***************THREE******************/
+/**************************************/
+
+
+let camera, scene, renderer, cube;
+
+function init() {
+  scene = new THREE.Scene();
+  scene.background = new THREE.Color(0xffffff);
+  camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHeight,0.1,1000);
+  renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  document.body.appendChild(renderer.domElement);
+  const geometry = new THREE.BoxGeometry(4,2.5,3);
+  const material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+  cube = new THREE.Mesh(geometry, material);
+  scene.add(cube);
+  cube.position.x = -13;
+  camera.position.z = 5;
+}
+
+function animate() {
+  requestAnimationFrame(animate);
+  window.addEventListener('scroll',rotate); // wheel 
+  renderer.render(scene, camera);
+}
+
+function rotate() {
+  //cube.rotation.x += 0.05;
+  cube.rotation.y += 0.05;
+  cube.position.x += 0.15;
+  console.log(cube.position.x);
+  if (cube.position.x > 12){
+    cube.position.x = -12;
+  }
+}
+
+function onWindowResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
+
+window.addEventListener('resize', onWindowResize, false);
+
+init();
+animate();
+

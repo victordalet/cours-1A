@@ -370,7 +370,6 @@ tbody tr:last-of-type {
 /**********************************************/
 
 section {
-	background: var(--colorLight);;
 	z-index: 3;
 	min-height: 50vh;
 	padding: 20px;
@@ -399,6 +398,7 @@ p {
 .section2 {
 	top: -5vh;
 	position: relative;
+	background: var(--colorLight);
 }
 
 .section2 p {
@@ -515,6 +515,15 @@ p {
 	z-index: 0;
 }
 
+/*******************************/
+
+canvas {
+	position: absolute;
+	top: 70vh;
+	z-index: -1;
+	min-height: 220vh;
+}
+
 
 /*******************************/
 .slide1 { transform: translateX(-100%); opacity: 0; transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;} 
@@ -626,6 +635,7 @@ p {
 
 	.light-mod  {
 		left: 85vw;
+		position: fixed;
 	}
 
 	.follow-cursor {

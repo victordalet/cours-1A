@@ -83,7 +83,10 @@
 
 /*19 10*/
 	// Instructions de boucles
-
-	// for 
+ 
 	// while
 	// do while
+
+/*02 11*/
+	
+	// for

@@ -18,3 +18,47 @@
 	// NET-ID  -> adresse réseau
 	// HOST-ID -> adreese hote (le reste)
 
+/*02-11*/
+
+	// Masque permet de déterminer la barrière entre le NET-ID et le HOST-ID
+
+	// Adressage IP de classe
+		// Classe A -> 1.0.0.0.0 à 126.255.255.255 -> Masque à 8 bits
+		// Classe B -> 128.0.0.0 à 191.255.255.255 -> Masque à 16 bits
+		// Classe C -> 192.0.0.0 à 223.255.255.255 -> Masque à 24 bits
+		// Classe D -> 224.0.0.0 à 239.255.255.255
+
+	// Règle analyse IP
+		// Ip de raison
+		// Ip de Brodcaste
+		// première IP
+		// dernière IP
+		// MASQUE
+		// IP default
+		// IP DHCP
+		// IP DNS
+
+
+	/*EXERCICES*/
+		149.255.136.32 /25
+
+		149.255.136.0
+		149.255.32.127
+		128.0.0.0
+		191.255.255.255
+		225.255.255.128
+
+
+		149.255.136.32 /22
+
+		149.255.136.0
+
+
+		221.204.40.10 /20
+
+		221.204.2.0
+		221.205.8.10
+		192.0.0.0
+		223.255.255.255
+
+

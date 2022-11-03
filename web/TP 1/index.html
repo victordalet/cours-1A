@@ -38,8 +38,8 @@
 				<li><div class="button"><a target="_blank" title="aller sur google" href="https://www.google.com/">GOOGLE</a></div></li>
 				<li><div class="button"><a target="_blank" title="aller sur W3S" href="https://www.w3schools.com/">W3SCHOOLS</a></div></li>
 				<li><div class="button"><a target="_blank" title="send mail" href="mailto:email@test.com">MAIL</a></div></li>
-				<li><div class="button"><a href="#title1">Title1</a></div></li>
-				<li><div class="button"><a href="#title2">Title2</a></div></li>
+				<li><a href="#title1"><div class="button">Title1</div></li></a>
+				<li><a href="#title2"><div class="button">Title2</div></li></a>
 			</ul>
 		</nav>
 		<div class="light-mod">
@@ -66,27 +66,29 @@
 			<img src="assets/fondation_mozilla.png" alt="Le logo Mozilla" >
 			<figcaption ><a href="assets/fondation_mozilla.png" target="_blanc">Ouvrir le logo dans une nouvelle fenêtre.</a></figcaption>	
 			<h3 class="slide2">Table des utilisateurs</h3>
-			<table >
-				<thead>
-				<tr>
-					<th>NOM</th>
-					<th>PRENOM</th>
-					<th>EMAIL</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Contenu</td>
-					<td>Contenu</td>
-					<td>Contenu</td>
-				</tr>
-				<tr>
-					<td>Contenu</td>
-					<td>Contenu</td>
-					<td>Contenu</td>
-				</tr>
-			</tbody>
-			</table>
+			<div class="container-table">
+				<table>
+					<thead>
+					<tr>
+						<th>NOM</th>
+						<th>PRENOM</th>
+						<th>EMAIL</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Contenu</td>
+						<td>Contenu</td>
+						<td>Contenu</td>
+					</tr>
+					<tr>
+						<td>Contenu</td>
+						<td>Contenu</td>
+						<td>Contenu</td>
+					</tr>
+				</tbody>
+				</table>
+			</div>
 
 			<p class="slide3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -150,7 +152,7 @@
 	</main>
 	<canvas></canvas>
 
-	<footer><p>&copy; Copyright  2022| Tous droits réservés</p></footer>
+	<footer>&copy; Copyright  2022| Tous droits réservés</footer>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </body>

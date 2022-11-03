@@ -322,8 +322,13 @@ figcaption:hover{
 	transform: scale(1.2);
 }
 /***************************************/
+.container-table{
+	overflow: auto;
+}
+
 table {
 	border-collapse: collapse;
+	overflow:auto;
 	width: 400px;
 	width: auto;
 	box-shadow: 0 5px rgba(0,0,0,0.15);
@@ -549,6 +554,10 @@ canvas {
 		display: block;
 	}
 
+	.section1 {
+		background:var(--colorLight);
+	}
+
 	.section1 p , .section2 p{
 		width: 90%;
 		margin: 50px auto;
@@ -587,14 +596,8 @@ canvas {
 		left: -9vw;
 		padding: 0px;
 		position: relative;
-	}
-
-	.button a {
 		font-size: 10vw;
 	}
-
-
-
 
 	.round {
   	width: 60vh;
@@ -641,6 +644,12 @@ canvas {
 	.follow-cursor {
 		display: none;
 	}
+
+	canvas {
+		display: none;
+	}
+
+
 
 
 }

@@ -1,9 +1,9 @@
 /* *********************************************************************** */
 /*                                                                         */
-/* OBJECTIVE : MULTIPLACTION               #####      ###    ###    #      */
+/* OBJECTIVE : * ; /                       #####      ###    ###    #      */
 /* AUTHOR :  VICTOR DALET                  #         #      #       #      */
 /* CREATED : 02 11 2022                    ####      #      #  ##   #      */
-/* UPDATE  : 02 11 2022                    #         #      #   #   #      */
+/* UPDATE  : 03 11 2022                    #         #      #   #   #      */
 /*                                         ####    ###      #####   #.fr   */
 /* *********************************************************************** */
 
@@ -21,10 +21,13 @@ int main() {
     for (int i = 0; i< nb2 ;i++)
         result += nb;
     printf("%d  *  %d = %lf \n",nb,nb2,result);
-    result = nb;
-    for (int i = 0 ; i < nb2 ; i++)
-        result -= nb;
-    printf("%d / %d = %lf",nb,nb2,result);
+    printf("%d / %d = ",nb,nb2);
+    result = 0;
+    while (nb>0) {
+        result++;
+        nb = nb-nb2;
+    }
+    printf("%lf",result);
 
 
 

@@ -7,7 +7,7 @@
 	/* UPDATE  : 03 11 2022                    #         #      #   #   #      */
 	/*                                         ####    ###      #####   #.fr   */
 	/* *********************************************************************** */
-
+	include 'header.php';
 	$message  = "Salut";
 	$age = 17;
 	$var = ($age>1) ? "s." : ".";
@@ -65,7 +65,8 @@
 	$user2  = ["name"=>"dalet","firstname"=>"victor","email"=>"victordalet@protonmail.com"];
 	$user3  = ["name"=>"dalet","firstname"=>"victor","email"=>"victordalet@protonmail.com"];
 
-	echo"	<table>
+	echo"	<div class='container-table'>
+			<table>
 				<thead>
 				<tr>
 					<th>Name</th>
@@ -88,7 +89,10 @@
 	echo"<td>".$user3["name"]."</td>";
 	echo"<td>".$user3["firstname"]."</td>";
 	echo"<td><a href=mailto:".$user3["email"].">".$user3["email"]."</a></td>";
-	echo"</tr>";
+	echo"</tr></table></div>";
+
+
+	include "footer.php";
 
 
 ?>

@@ -178,4 +178,47 @@
 		1) drwxrwxr--
 		2) -rw--w-rw-
 		3)  
+   
 
+
+/* 22 11 */
+
+	// Liens physiques
+		// différents nom pour un même fichier
+
+	// Liens symboliques
+		// second fihcier symbolique qui pointe vers le premier fichier
+
+
+	// cat > fic1             -> écrire du texte
+	// cat >> fic1            -> rajoute du texte
+	// cat fic1               -> lire le fichier
+	// cat fic1 fic2 > fic3   -> déplacer deux fichier dans un autre fichier
+	// date > fic1            -> stocker la date dans fic1
+	// cat >> fic1 << fini    -> ecrit dans un fichier tant que le mot clée fini n'est pas saisie	
+	// wc fic1                -> compte le nombre de mot
+	// wc -c                  -> nombre de caractères
+	// wc -w                  -> nombre de mots
+	// wc -l                  -> nombre de lignes
+	// cut -d                 -> coupe une partie
+	// sort -n                -> trie des chiffres
+	// sort -d -r             -> ordre alphabétique inverse
+	// head -x                -> x premiere lignes d'un fichier
+	// tail -5                -> x dernière lignes d'un fichier   
+	// grep ""                -> recupère les lignes avec ce caractères
+	// grep -c ""             -> recupère le nombre de ligne avec ces caractères
+
+
+	/* TP */
+		// grep "/home" passwd | wc -l         
+			-> afficher le nombre d'utilisateurs dont le répertoire personnel se trouve dans /home
+		// cut -d: -f1,7 passwd | tail -7      
+			-> afficher les logins et shells des 7 derniers utilisateurs créés. 
+		// grep "/usr/sbin/login" passwd | sort -r  | cut -d: -f1
+			-> afficher le login des utilisateurs utilisant le shell /usr/sbin/nologin par ordre inverse alphabétique.
+		// sort -t: -k3 -n passwd | tail -5
+			-> afficher les noms des 5 utilisateurs ayant les plus grands UID
+		// cut -d: -f1,4,5 passwd | grep "1000" | cut -d: -f1,3
+			-> afficher les logins et commentaires des utilisateurs du groupe 1000
+		//  tail -10  passwd | sort -d | head -3 | cut -d: -f1 
+			-> afficher, parmi les 10 derniers utilisateurs créés, les 3 premiers par ordre alphabétique de leur login.

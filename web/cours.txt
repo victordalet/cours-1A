@@ -4,3 +4,12 @@
 	// tp découverte balise (html5)
 /*12-10*/
 	// css
+
+
+/*REACT*/
+
+	npx create-react-app mon-app    -> créer programme
+	npm start     					-> lancer programme
+	npm run build 					-> compiler projet
+	npm i -s react-router-dom sass  -> bibliothèques utiles
+	rsc                             -> dans editeur pour début code

@@ -89,4 +89,17 @@
 
 /*02 11*/
 	
-	// for
+	// boucle for
+
+/*16 11*/
+
+	// TABLEAU
+
+		// Construction
+			// Définition -> variable servant à stocker un ensemble de valeur de même type. 
+						  -> La taille est fixée à l'initialisation.
+		  	
+		  	// Déclaration -> type id[taille];
+		  				   -> type id[taille] = {liste des valeurs};
+
+		  	// accès à l'élément -> id[num case]

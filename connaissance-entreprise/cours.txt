@@ -37,14 +37,14 @@ Contacte -> 06 07 26 97 70
 
 
 				// PME -> petite moyenne entreprise
-				// PMI ->  >10 salaries et chiffre d'affaires <50 m d'€
+				// PMI ->  >10 salariesa et chiffre d'affaires <50 m d'€
 				// ETI -> Entreprise de taille intermédiare -> 250 à 4999 salariées et chiffre d'affaire n'éccédent pas 1,5milliard d'€
 
 
 			//statut juridique
-				// individuel -> capital impartient à unse seul persoonnes
+				// individuel -> capital impartient à une seul personnes
 				// AUTRE 
-					// Dirigeant -> SARL  
+					// Dirigeanté -> SARL  
 					// SAS -> Président 
 					// SA (société anonyme) -> PDG ou PCA (conseille administration)
 
@@ -53,7 +53,8 @@ Contacte -> 06 07 26 97 70
 			// majoritaire 
 			// égalitaire 
 			// minoritaire 
-			// non associé -> possède aucune part social (du captial social)
+			// non associé -> possède aucune part social (du captial social) 
+						   -> à le droit au chômage
 
 			// TNS (travailleur non salarié) -> part >= 51%
 
@@ -70,6 +71,44 @@ Contacte -> 06 07 26 97 70
 	/*2 questions (contrôle)*/
 	// ENTREPRISE PUBLILC
 	// ENTREPRISE COTE BOURSE
+
+
+	// Gérant -> SARL
+	// Gérance 
+		// 2 co-gérant | gérence : 75% ; 25%
+		// 25% | 25% | 50% (investisseur)
+
+	// personne moral = société | personne physique = humain
+
+	// président SAS majoritaire -> fait toujours partis des régime des salariées
+
+
+	// Une entreprise côté est une société dont les actions composant sont capital sont pour tout où partit échangable sur un marché 	financée.
+		// SA sont les seuls pouvant être côté en bourse.
+
+	// Bourses les plus attirantes 
+		-> Wallstreat ; Londre ; Hong-KONG ; Singapour ; Shangay ; Tokyo ; Pékin ; Doubai ; Sheishey ; Toronto
+
+	// CAC 40 
+		-> 40 actions cotées en continues sur le marché parmis les 100 société dont les échanges sont importants
+
+	// Intégrer la bourse 
+		-> apelle à un ODIT (vérifié l'ensemble de la société pour la valorisé) 
+
+	// Organisation juridique de l'entreprise suivant son statut
+		// Entreprise doit être reconnu par le grève du tribunal
+			// l'estrait K_bis est le seul document attesant de la réalité de l'entreprise
+				// chaque entreprise immatriculé au RCS, en possède un
+			// K_bis est mentionner ->
+				// le nom 
+				// le siège social
+				// l'activitée 
+				// capital social
+				// le noms des dirigeants
+			// K_bis ->
+				// Etablissement bancaire
+				// Casier judiciare
+
 
 /*23 11*/
 	/*contrôle continue (créer une société [nom-logo-...])*/

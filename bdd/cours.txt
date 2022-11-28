@@ -162,3 +162,142 @@
 									|      ______      |
 									|     téléphone    |
 									|__________________|
+
+
+
+/*07 11*/
+
+	// Traduction d'un MCD en MLD
+
+		// Dans le modèle logique, les données sont représentées par des tables.
+		// L'état cohérent de la base est défini par un ensemble de contrainte d'intégrité.
+
+		// Le passage du MCD au MLD ->
+			// Entités -> table
+			// transformations des relation du MCD
+
+		// Clé primaire (repésente entité)&
+			// la valeur vide NULL est interdite
+			// la valeur ne peut pas changer	
+
+		// Clé étrangère
+			// la valeur Null est interdite
+			// identifie une colonne d'une table référencant une colonne d'une aure table
+			// Cardinalité -> 1,n = Infini ; 1,1 = Fini
+				// rajoute ->  (unique)  si deux Fini
+			// une assiciation binaire de type n,m devient une table supplémentaire (table de jonction) dont la cléf primaire est composée de 	la réunions des clés étrangères.
+			// Représentation ->	
+
+
+			 ______________
+			|   Personne   |
+			|______________| 
+			|NoInscription |
+			|              |
+			|Nom           | 
+			|Prénom        |                     ___________
+			|#Adresse      |  <---------------> |  Adresse  |
+			|______________|						   |___________|
+															| IdAdresse |
+															|           |
+														   |Numero     |
+															|Rue        |
+															|Code Postal|
+															|Ville      |
+															|Pays       |
+                                             |___________|	
+
+
+
+
+
+/*28 11*/
+
+
+	// Types de données	
+	   // Numérique :
+         Nombre entier : INTEGER 
+         Nombres réels : FLOAT
+	    // Chaîne de caractères :
+			Char (taille)  1<<Taille<< 255
+			VarChar (taille) 
+			Text ->  ∞
+
+
+
+	// Création de table
+
+		create table Etudiant(nom VARCHAR(30),
+		prenom VARCHAR(30),
+		age INTEGER 
+		PRIMARY KEY(nom,prenom)
+		);
+
+	// Supprimer une table
+
+		DROP TABLE (nom de la table);
+
+	// Ajouter une collone
+
+		ALTER TABLE (table_name) ADD (name) (type);
+
+	// Supprimer une collone
+
+		ALTER TABLE (table_name) DROP (column);
+
+	// Modifier une collone
+
+		ALTER TABLE (table_name) MODIFY (column_name) (new_type);
+
+	// Modifier le nom
+
+		ALTER TABLE (name_table) CHANGE (old_name) (new_name) (type);
+
+	// Modifier la clé primaire
+
+		ALTER TABLE (table_name) DROP  primary key ;
+		ALTER TABLE (table_name) ADD PRIMARY KEY (name);
+
+	// Clés étrangères
+
+		(name) (type) REFERENCES (table_name) ((column))
+
+		FOREIGN KEY (names) REFERECES (table_name) ((columns))
+
+		// exemple : 
+
+			CREATE TABLE CLASSE (
+			id INTEGER PRIMARY KEY,
+			nom VARCHAR (15)
+			);
+
+			CREATE TABLE ETUDIANT(
+			nom VARCHAR(35) PRIMARY KEY,
+			prenom VARCHAR(35),
+			age INTEGER,
+			classe_id INTERGER REFERENCES CLASSE (id)
+			);
+
+		// exemple :
+
+			CREATE TABLE CLASSE (
+			id INTEGER ,
+			nom VARCHAR (15),
+			PRIMARY KEY (id,nom)
+			);
+
+			CREATE TABLE ETUDIANT(
+			nom VARCHAR(35) PRIMARY KEY,
+			prenom VARCHAR(35),
+			age INTEGER,
+			classe_id INTERGER, 
+			classe_name VARCHAR (15),
+			FOREIGN KEY (class_id,class_name) REFERENCES CLASSE (id,nom)
+			);
+
+
+
+	// Lancer mysql 
+		mysql -uroot -proot
+
+		

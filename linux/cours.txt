@@ -204,7 +204,7 @@
 	// sort -n                -> trie des chiffres
 	// sort -d -r             -> ordre alphabétique inverse
 	// head -x                -> x premiere lignes d'un fichier
-	// tail -5                -> x dernière lignes d'un fichier   
+	// tail -x                -> x dernière lignes d'un fichier   
 	// grep ""                -> recupère les lignes avec ce caractères
 	// grep -c ""             -> recupère le nombre de ligne avec ces caractères
 
@@ -222,3 +222,9 @@
 			-> afficher les logins et commentaires des utilisateurs du groupe 1000
 		//  tail -10  passwd | sort -d | head -3 | cut -d: -f1 
 			-> afficher, parmi les 10 derniers utilisateurs créés, les 3 premiers par ordre alphabétique de leur login.
+
+
+/* 288 11 */
+
+	// L'éditeur vi
+	// L'éditeur nano

@@ -75,4 +75,14 @@ tbody tr:last-of-type {
   border-bottom: 2px solid var(--color2);
 }
 
+header nav ul li {
+  display: inline;
+  padding-top: 5vh;
+  padding-left: 50px;
+  margin: auto;
+  transition: 1s;
+  cursor: pointer;
+}
+
+
 

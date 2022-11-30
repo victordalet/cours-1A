@@ -7,14 +7,14 @@
 	/* UPDATE  : 03 11 2022                    #         #      #   #   #      */
 	/*                                         ####    ###      #####   #.fr   */
 	/* *********************************************************************** */
+
 	include 'header.php';
 	$message  = "Salut";
 	$age = 17;
-	$var = ($age>1) ? "s." : ".";
 	$table = ["Banane", "Fraise", "Orange", "Kiwi"];
 	//var_dump($table);
 	echo "<h1>".$message."</h1>";
-	echo "<h2>Tu as ".$age."an".$var."</h2>";
+	echo "<h2>Tu as ".$age."an".(($age>1) ? "s." : ".")."</h2>";
 	if ($age<18){
 		echo "<h2>Tu es mineur.</h2>";
 	}

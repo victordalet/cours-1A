@@ -76,8 +76,6 @@
     c  
 	0  1  1  1  1
 	1  1        1
-
 	2 GROUPE de 2
 	1 GROUPE de 4
 
-	

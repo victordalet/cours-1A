@@ -83,7 +83,7 @@ Contacte -> 06 07 26 97 70
 	// président SAS majoritaire -> fait toujours partis des régime des salariées
 
 
-	// Une entreprise côté est une société dont les actions composant sont capital sont pour tout où partit échangable sur un marché 	financée.
+	// Une entreprise côté est une société dont les actions composant sont capital sont pour tout où partit échangable sur un marché financée.
 		// SA sont les seuls pouvant être côté en bourse.
 
 	// Bourses les plus attirantes 
@@ -109,10 +109,71 @@ Contacte -> 06 07 26 97 70
 				// Etablissement bancaire
 				// Casier judiciare
 
+	// Fond propre  -> richesse de l'entreprise
+					-> donne la valeur minimum de l'entreprise
+					-> capitaux dont disposes l'entreprises
+					-> soit apportés par les actionnaires soit acquis par les activitées économiques
+					-> ne doivent pas représentées moins de la motier du capital social
+
+	// capital social
+					-> l'augmenter pour garder l'implication du créateur de l'entreprise
+						-> apport numérère
+						-> apport en nature
+							-> matériel ; bureaux ; brevet ; fond de commerce...
+
+	// SA -> nombre d'associées minimum
+			-> 2 non coté en bourse
+			-> 7 coté en bourse
+
+	// SCI (société civil immobilière)
+		-> familial -> famille qui investit sur un bien
+		-> liée à l'import sur les sociétées 
+
 
 /*23 11*/
 	/*contrôle continue (créer une société [nom-logo-...])*/
 
 
+/* QUESTIONS */
+
+	evolution de votre activité
+	chiffre d'affaire
+	de qu'elle facon est-il ventilé (ventilation d'un chiffre d'affaire)
+	effectifs
+	filiales
+	où se trouve votre production
+	produit phare (le plus vendus)
+	en % cb représent-il sur votre chiffre d'afaire
+	avez des sites à l'international
+	en % de votre chiffres d'affaires qu'elle budjet aloué vous à l'informatique
+	qu'elle est l'éffectif de votre service informatique
+	cb avez vous de chef de projet
+	cb gère t -ils de collaborateurs
+	projet le plus long
+	projet le plus court
+	faites vous appelle à des prestataires (partenaire externaire qui fait le travail que nous ne savons pas faire)
+
+	cb avez vous de postes de travailles (serv...)
+	etes vous pour ou contre la location écolutives (locationd de matériel)
+	pour votre société que représente le cloud
+	type de logiciel utilisée vous
+	logiciel libre
+	anti virus
+	pensez vous faire de la croissance externes (rachat d'entreprise)
+		-> qu'elle serait votre société cible
+	comment identifié vous vos futurs collaborateurs
+	qu'elle est chez vous l'ambience de travail
+	qu'elle est le parcour des collaborateur de l'équipe
+	faites vous apelles à des stagières ou à des alternants
+	qu'elle type de projet leurs confier vous
+	comment se passe l'intégration de vos nouveau collaborateurs
+	si demain je devais intégrer votre entreprise qu'elle conseil me donierez vous
+	qu'attendez vous de vos futurs collaborateurs
+	d'après vous qu'elles vont êtres les prochaines étapes
+
+
+
+
 /*04-01*/
 	/*L'importance de l'informatique au seins de l'entreprise (soutenace - interview d'une entreprise)*/
+

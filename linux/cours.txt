@@ -224,7 +224,13 @@
 			-> afficher, parmi les 10 derniers utilisateurs créés, les 3 premiers par ordre alphabétique de leur login.
 
 
-/* 288 11 */
+/* 28 11 */
 
 	// L'éditeur vi
 	// L'éditeur nano
+
+/* 09 12 */
+
+	// Installation de package
+	// Gestion processus
+	// Service DHCP

@@ -102,4 +102,9 @@
 		  	// Déclaration -> type id[taille];
 		  				   -> type id[taille] = {liste des valeurs};
 
-		  	// accès à l'élément -> id[num case]
+		  	// accès à l'élément -> id[num case]	
+
+
+/* 07 12 */
+
+	// Tableau à n dimensions

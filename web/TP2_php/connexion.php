@@ -1,4 +1,5 @@
 <?php
+
 	include 'header.php';
 	echo "
 
@@ -7,6 +8,8 @@
 		<input type='text' name='password' placeholder='password'>
 		<input  type='submit' value='Login'>
 	</form>
+	<br>
+	<a href='inscription.php'>Inscription</a>
 
 	";
 	if (isset($_GET['msg'])) {

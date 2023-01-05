@@ -25,18 +25,33 @@
 			exit;
 		}
 
-		if ($_POST['mail'] == "admin@site.com" && $_POST['password'] == "php123") {
-			session_start();
-			$_SESSION['email'] = "l'utilisateur est connecté" ;
-			give_data("connexion reussis");
-			header('Location: index.php');
-			exit;
-		}
-		else {
-			header('Location: connexion.php?msg=email ou mdp eronne');
-			give_data("connexion echoue");
-			exit;
-		}
+        $bdd = new PDO("mysql:host=localhost;dbname=site3", "root", "");
+        $req = $bdd->prepare("SELECT email FROM table");
+        $array_email = $req->fetchAll();
+        $reqP = $bdd->prepare("SELECT password FROM table");
+        $array_pass = $reqP->fetchAll();
+        $mdp = $_POST["password"];
+        foreach ($array_email as $key => $value) {
+            if ($value == $_POST["mail"]) {
+                if ( $array_pass[$key] == hash("sha512, $mdp")) {
+                    session_start();
+                    $_SESSION['email'] = "l'utilisateur est connecté" ;
+                    give_data("connexion reussis");
+                    header('Location: index.php');
+                    exit;
+                }
+                else {
+                    header("Location: connexion.php?msg=mdp eronne");
+                    give_data("connexion echoue");
+                    exit;
+                }
+            }
+        }
+
+		header('Location: connexion.php?msg=email eronne');
+		give_data("connexion echoue");
+		exit;
+		
 
 	}
 

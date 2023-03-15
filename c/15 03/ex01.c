@@ -48,10 +48,10 @@ int main() {
     printf("\n");
 
 
-    char *new = (char *)malloc(sizeof(char));
-    *new = 'n';
-    tab = (char *) realloc(tab, taille+1 * sizeof(char));
-    tab[taille+1] = *new;
+    tab = (char *) realloc(tab, sizeof(char));
+    tab[taille] = 'c';
+
+
 
     for (int i = 0; i < taille+1; i++) {
         printf("%c ", tab[i]);

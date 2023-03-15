@@ -1,5 +1,5 @@
 <?php
-	
+
 
 
 	if (empty($_POST['mail'])) {
@@ -37,7 +37,7 @@
 
     try {
         $bdd = new PDO("mysql:host=localhost;dbname=site3", "root", "");
-        $req = $bdd->prepare("SELECT email FROM table");
+        $req = $bdd->prepare("SELECT email FROM users");
         $array_email = $req->fetchAll();
         foreach ($array_email as $key => $value) {
             if ($value == $mail) {

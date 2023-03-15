@@ -18,7 +18,6 @@ echo"
 			<ul>
 				
 				<li>".( (isset($_SESSION['email'])) ? "<a href='deconnexion.php'>Deconnexion</a>" :  "<a href='connexion.php'>Login</a>")."</li>
-
 			</ul>
 
 		</nav>

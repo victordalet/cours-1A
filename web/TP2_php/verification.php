@@ -51,7 +51,6 @@
 		header('Location: connexion.php?msg=email eronne');
 		give_data("connexion echoue");
 		exit;
-		
 
 	}
 

@@ -101,7 +101,7 @@
 									 __________________                
 									|      PRODUIT     |      
 									|__________________|
-									|     	 id        |
+									|     	 id       |
 									|        __        |   
 									|       nom        |  
 									|       prix       |
@@ -176,7 +176,7 @@
 			// Entités -> table
 			// transformations des relation du MCD
 
-		// Clé primaire (repésente entité)&
+		// Clé primaire (repésente entité)		
 			// la valeur vide NULL est interdite
 			// la valeur ne peut pas changer	
 
